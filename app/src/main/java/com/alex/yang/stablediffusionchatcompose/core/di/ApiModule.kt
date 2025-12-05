@@ -24,11 +24,9 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object ApiModule {
-
     @Provides
     @Singleton
     fun provideApiHost(): String = "https://modelslab.com"
-
 
     @Provides
     @Singleton
@@ -36,6 +34,7 @@ object ApiModule {
         ignoreUnknownKeys = true
         isLenient = true
         explicitNulls = true
+        encodeDefaults = true
     }
 
     @Provides
