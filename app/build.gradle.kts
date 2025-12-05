@@ -84,7 +84,11 @@ dependencies {
     // Icons
     implementation(libs.androidx.compose.material.icons.extended)
 
-    //Coil
+    // Coil
     implementation(libs.coil)
     implementation(libs.coil.compose)
+
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:5.3.2")
+    implementation("com.squareup.okhttp3:logging-interceptor:5.3.2")
 }
